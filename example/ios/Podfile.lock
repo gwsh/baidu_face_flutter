@@ -1,0 +1,28 @@
+PODS:
+  - baidu_face_flutter (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - permission_handler (5.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - baidu_face_flutter (from `.symlinks/plugins/baidu_face_flutter/ios`)
+  - Flutter (from `Flutter`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+
+EXTERNAL SOURCES:
+  baidu_face_flutter:
+    :path: ".symlinks/plugins/baidu_face_flutter/ios"
+  Flutter:
+    :path: Flutter
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+
+SPEC CHECKSUMS:
+  baidu_face_flutter: e898d60203b2e487d120edd9048e0d0be4c2e0bf
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  permission_handler: 7022f8972d2d85ce95c1040db945f28bdbfa45d1
+
+PODFILE CHECKSUM: f32fb4e7c14f8b3ca19a369d7be425dd9241af27
+
+COCOAPODS: 1.8.4
