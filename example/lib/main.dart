@@ -11,9 +11,11 @@ void main() async {
   // 人脸识别初始化
   final config = Config(livenessTypeList: [LivenessType.Eye]);
   if (Platform.isAndroid) {
-    await BaiduFace.instance.init('gldcircle-face-android', config: config);
+    await BaiduFace.instance
+        .init('gwshflutterfacedemo-face-android', config: config);
   } else if (Platform.isIOS) {
-    await BaiduFace.instance.init('gldcircle-face-ios', config: config);
+    await BaiduFace.instance
+        .init('gwshflutterfacedemo-face-ios', config: config);
   }
   runApp(MyApp());
 }
@@ -41,7 +43,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Plugin example app'),
+        title: const Text('百度离线活体SDK_flutter'),
       ),
       body: Center(
         child: FlatButton(
@@ -52,6 +54,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
+  /// 活体
   void _handleVerify(BuildContext context) async {
     await Permission.camera.request();
     try {
